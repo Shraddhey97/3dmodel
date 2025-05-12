@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Car Model</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/controls/OrbitControls.js",
+            "three/examples/jsm/loaders/GLTFLoader": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/loaders/GLTFLoader.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- First Row -->
+        <div class="row">
+        <div> <div id="model-container" style="width: 500px; height: 400px;"></div><h1>BMW M5</h1></div> 
+        <div> <div id="wagonr-container" style="width: 600px; height: 400px;"></div><h1>WagonR</h1></div>
+        <div><div id="audi-container" style="width: 600px; height: 400px;"></div><h1>Audi Rs7</h1></div>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="row">
+           <div> <div id="fortuner-container" style="width: 600px; height: 400px;"></div><h1>Fortuner</h1></div>
+            <div><div id="nissan-container" style="width: 600px; height: 400px;"></div><h1>Nissan GTR</h1></div>
+        </div>
+    </div>
+
+      
+    <script type="module" src="main.js"></script>
+    <script type="module" src="wagonr.js"></script>
+    <script type="module" src="audi.js"></script>
+    <script type="module" src="fortuner.js"></script>
+    <script type="module" src="nissangtr.js"></script>
+</body>
+</html>
